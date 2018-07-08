@@ -1,0 +1,33 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title></ion-title>
+    <ion-buttons end>
+      <button (click)="dismiss()">close</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding >
+
+
+  <h4>YOU'VE DONE TRANSACTION WITH KANNA.</h4>
+  <p>RATE YOUR TRANSACTION:</p>
+
+  <ion-grid center class="ion-rating-container">
+    <ion-row>
+  
+      <ion-col *ngFor= "let star of stars" tappable (click)="starClicked(1)">
+        <ion-icon [name]="star"></ion-icon>
+
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>
+
